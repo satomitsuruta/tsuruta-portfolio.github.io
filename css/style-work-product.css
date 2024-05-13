@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    font-size: 1.1rem; 
+    
+}
+* {
+    font-family: 'Noto Sans JP', sans-serif; 
+}
+header {
+    margin: 0 10px 10px;
+    background-color:#004ec4;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+/*ヘッダー*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+#header h1 {
+    font-family: 'Playfair Display', serif;;
+    font-weight: 600;
+    margin-left: 30px;
+}
+#header .nav {
+    min-width: 300px;
+    width: 10%;
+    margin-right: 30px;
+    list-style: none; 
+    font-size:20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;  
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+#header li {
+    width: 100px;
+    text-align: center;
+    flex-grow: 1;
+}
+#header ul a {
+    color: #fff;
+}
+#header ul a:hover {
+    color: #00f925;
+}
+h1 {
+    height: 100%;
+}
+/*メインエリア*/    
+main {
+    margin: 95px 10px 0;
+    padding: 0 10px 20px;
+}
+#work, .flex {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+}
+#work {
+    width: 95%;
+   column-gap: 50px;
+  
+}
+#work, .item4 {
+    padding-top: 0;
+}
+.item1 {
+    width: 45%;
+    align-items:stretch;
+    column-gap: 25px;
+}
+.item1 .LP {
+    width: 50%;
+}
+.item1 .LP-renewal  {
+    margin-top: 30px;
+}
+.item4.flex {
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.item2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 10px;
+}
+.item3 {
+    width: 100%;
+}
+
+.item3 .text{
+    padding: 10px 10px 0;
+}
+.item3 h3 {
+    font-weight: normal;
+    text-align: center;
+}
+.item3 .text .inline-block, .item3 ul, .persona {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.3;
+}
+.persona .flex {
+    padding: 5px 0;
+    align-items: center;
+}
+.indent {
+    text-indent: 1em;
+}
+.persona .flex .indent {
+    width: 67%;
+    padding-left: 1rem;
+    text-indent: 0;
+}
+.inline-block.indent {
+    text-indent: 1em;
+}
+.item3 .center {
+    text-align: center;
+}
+.item3 .center .inline-block {
+    text-align: left;
+}
+.item3 .bold, .item3 .text .inline-block {
+    font-size: 20px;
+}
+.item3 .text .inline-block.indent {
+    font-size: 16px;
+}
+.item3 .bold {
+    padding: 10px 0;
+}
+.item3 .text .inline-block {
+    padding: 0;
+}
+.item3 ul {
+    list-style-position: inside;
+    width: 90%;
+}
+.item3 .center .inline-block li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+.item3 li {
+    margin: 5px auto 0;
+}
+.item3 dt {
+    width: 8em;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.item4 .center {
+    width: 33%;
+    padding: 10px;
+}
+#product {
+    width: 95%;
+    margin: 20px auto;
+}
+.product {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.here {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.pop-up-item .text p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+}
+.bggradient a {
+    display: block;
+}
+.Playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 10px 10px;
+    padding: 0 5px 5px;
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000;
+    text-align: center;
+}
+.bgc-orange {
+    background-color:  #d46300;
+    padding: 5px;
+}
+.bgc-green {
+    background-color: #04b901;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.color-w {
+    border-radius: 5px;
+    color: #fff;
+}
+.bold {
+    font-weight: bold;  
+}
+.center {
+    text-align: center;
+}
+.link {
+    color: #03c500;
+}
+.link:hover {
+    color: #d46300;
+}
+.link:hover .work-title {
+    background-color: #10cd0c;
+}
+/*書道教室説明*/
+.shodo-class {
+    width: 85%;
+}
+.shodo {
+    margin: 0 auto;
+}
+.item3.shodo-persona {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item3.shodo-persona .persona  {
+    width: 80%;
+    margin: 0 auto;
+}
+/*袋文字*/
+.text-shadow-1px {
+    text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
+}
+/*背景色グラデーションアニメ*/
+.bggradient {
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 6px outset ;
+    font-size: 20px;
+    background: linear-gradient(120deg, #03c700 , #03c700,#7bff00, #03c700, #03c700) ;
+    background-size: 350% 100%;
+    background-position: 100% 100%;
+    box-shadow: 0px 1px 10px #000;
+    border-color: #03c500;
+  }
+.bggradient:hover {
+    transition: 3s all;
+    background-position: 0% 0%; 
+}
+.bggradient:active {
+    border-style: inset;
+}
+.bggradient:active  {
+    transition: 0s;
+    box-shadow: -1px 1px 10px #000  ;
+    border-color: #03c700;  
+    background: #00a434;
+}
+/*ポップアップ*/
+.scheme {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid  #d3d3d3;
+    border-radius: 8px;
+    transition: 0.4s all;
+    box-shadow:   0px -5px 3px 3px #c4c4c4 inset, 0px -5px 3px  #c4c4c4 inset;
+}
+.scheme:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 10px 5px #bdbdbd, -5px -5px 10px 5px #bdbdbd;
+}
+.scheme:hover .here {
+    display: none;
+}
+.scheme:hover .width1300-text {
+    font-weight: bold;
+}
+.width .text {
+    width: 100%;
+}
+.pop-up-item .text{
+    display: none;
+    width: 100%;
+    transition: all 0.3s;
+}
+/*出現時のスタイル*/
+.pop-up-item .text.is-active {
+    display: block;
+}
+ /*レスポンシブ対応*/
+/*ハンバーガーメニュー*/
+#hamburger-menu {
+    margin: 10px 0;
+}
+#menu-btn-check, .hamburger-menu {
+    display: none;
+}
+/*レスポンシブ用ボタン*/
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 45px;
+    width: 45px;
+    z-index: 90;
+    background-color: #000;
+    display: none;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    top: 8px;
+}
+.menu-btn span:after {
+   bottom: 8px;
+}
+.menu-btn:hover {
+    cursor: pointer;
+}
+#menu-btn-check:checked ~ .menu-btn {
+    background-color: rgba(0, 0, 0, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+.hamburger-menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 180px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(101%, 0);
+    transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-menu {
+    transform: translate(0, 0);
+}
+.hamburger-menu ul {
+    padding: 55px 10px 20px;
+}
+.hamburger-menu ul li {
+    margin: 0 auto;
+    width: 95%;
+    border-bottom: 2px solid #fff;
+    padding: 5px 5px 3px;
+    list-style: none;
+    margin-top: 1rem;
+}  
+.hamburger-menu ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #fff;
+} 
+.hamburger-menu ul li a:hover {
+    color:#04c701;  
+    text-decoration: none;  
+}
+ @media screen and (max-width: 1300px) {
+    #header .nav {
+        width: 30%;
+        margin: 0 auto;
+    }
+        
+    h1 {
+        font-size: 60px;
+    }
+    main {
+        padding: 0 0 20px;
+    }
+    #work {
+        display: block;
+        width: 100%;
+    }
+    .item1 {
+        margin: 0 auto 50px;
+        width: 100%;
+    }
+    .item1 section {
+        flex-grow: 1;
+    }
+   
+    .item1 h2, .item1 p  {
+        width: 80%;
+        margin: auto;
+    }
+    .item1 p img {
+        width: 100%;
+    }
+    .item3 .center .inline-block li {
+        padding-left: 1.5em;
+        text-indent: -1.5em;
+    }
+    .item4.flex {
+        display: block;
+    }
+    .item4 .scheme {
+        margin: 10px auto;
+        width: 90%;
+    }
+    .scheme:hover {
+        transform: scale(1, 1);     
+        box-shadow: 0px -5px 3px 3px #c4c4c4 inset, 0px -5px 3px #c4c4c4 inset;
+    }
+    .width1300-text {
+        font-weight: bold;
+    }
+    .pop-up {
+        display: none;
+    }
+    .scheme > .bgc-green, .scheme > .width1300-text, .pop-up-item .text {
+        display: block;
+    }
+    .item3 .persona .flex {
+        max-width: 350px;
+        width: 90%;        
+    }
+    .item3 .persona .flex dd {
+        flex-grow: 1;
+    }
+    /*書道教室説明*/
+    .shodo-class {
+        width: 40%;
+    }
+    .item3.shodo-persona .persona .flex {
+        min-width: 600px;
+        width: 60%;
+        margin: 10px auto;
+    }
+    .item3.shodo-persona  dd{
+        flex-grow: 1;
+    }
+    .item3.shodo-persona .indent {
+        text-indent: 0;  
+       
+    }
+    .item3.shodo-persona  dd > div {
+        width: 90%;
+        margin: 0 auto;
+    }
+ }
+ @media screen and (max-width: 767px){
+    #header h1 {
+        font-size: 45px; 
+        margin: 0;
+        width: 100%;
+    }
+    #header .nav {
+        margin: 0;
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .top .inline-block.font-udmin {
+        text-indent: 3rem; 
+    }
+    main {
+        margin: 70px 5px 0; 
+        padding: 10px 0;
+
+    }
+    #work, .item1 {
+        width: 100%;
+        padding: 0;
+    }
+    .item1 {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .item1 .LP {
+        width: 100%;
+    }
+    .item1 p  {
+        width: 80%;
+        margin: auto;
+    }
+    .item2 {
+        display: block;
+    }
+    .item3:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .item4 {
+        padding: 0;
+    }
+    .item4  .scheme {
+        padding: 10px 0;
+        width: 100%;
+    }
+   
+    /*書道教室説明*/
+    .item3.shodo-persona .persona {
+        width: 100%;
+    }
+    .item3.shodo-persona .persona .flex {
+        min-width: 0;
+        width: 100%;
+        
+    }
+    .item3.shodo-persona .persona dd {
+        width: 50%;
+    }
+ }
+@media screen and (max-width: 400px) {
+    .item4.flex {
+        width: 100%;
+    }  
+}
+@media screen and (max-width: 300px){
+    #header h1 {
+        font-size: 30px;
+    }   
+    .item1 p {
+        width: 100%;
+    }
+    .item2 {
+        padding: 10px 0;
+    } 
+    .item3 .none {
+        display: none;
+    }     
+    .persona .flex {
+        display: block;
+        text-align: center;
+        text-align-last:center;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .persona dt {
+        display: inline-block;
+        margin: 0 auto; 
+    }
+    .indent {
+        text-indent: 0;
+    }
+    .pop-up-item .text p {
+        padding: 10px 0;
+    }
+    /*書道教室*/
+    .item3.shodo-persona .persona dd {
+        width: 100%;
+    }
+
+}

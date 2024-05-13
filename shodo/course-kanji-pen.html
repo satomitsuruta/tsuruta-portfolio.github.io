@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title> ×○習字教室 | コース紹介_漢字部・ペン部 </title>
+        <meta name="description" content="正しい美しい字は、一生の宝です。当教室では、楽しみながら正しい美しい文字を学ぶことを目的としております。
+        習字を学ぶことで綺麗な姿勢、集中力、問題解決に必要な論理的思考力も養うことができます。">
+        <meta name="keywords" content="習字,書道,習字教室">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+        <link href="css/style-course-detail.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="head">
+            <div class="top">
+                <div class="head1">
+                    <P class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></P>
+                    <div class="w-900">
+                        <div class="head2">
+                            <div class="head3">
+                                <p><a href="#sitemap" class="go-sitemap">サイトマップ</a></p>
+                                <div class="font-size">
+                                    <p>文字サイズ</p>
+                                    <div class="size">
+                                        <button onclick="changeFontSize(1.1)" data-fs="1.1" class="small">小</button>
+                                        <button onclick="changeFontSize(1.5)" data-fs="1.5" class="midium">中</button>
+                                        <button onclick="changeFontSize(1.7)" data-fs="1.7" class="big">大</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="search" action="#">
+                                <div class="search">
+                                    <input type="text" name="serch" placeholder="検索ワード">
+                                    <input type="submit" value=" ">       
+                                </div>
+                            </form>
+                        </div>
+                        <div id="hamburger-menu">
+                            <input type="checkbox" id="menu-btn-check">
+                            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                            <div class="hamburger-menu">
+                                <ul>
+                                    <li><a href="index.html">ホーム</a></li>
+                                    <li><a href="learn.html">習字を学びたい方</a></li>
+                                    <li><a href="course.html">コース紹介</a></li>
+                                    <li><a href="about.html">教室について</a></li>
+                                    <li><a href="contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <ul class="menu">
+                        <li class="main-menu"><a href="learn.html">習字を学びたい方<br>
+                        <span>learn</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="learn.html#membership">会費</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="learn.html#join">入会までの流れ</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="course.html">コース紹介<br>
+                            <span>course</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="course.html#junior">小学生・中学生</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#adult">高校生・成人の部</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#creation">作品紹介・受講者の声</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#promotion">昇段・昇級について</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="about.html">教室について<br>
+                            <span>about</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="about.html#recruitment">募集要項</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#join">一日の流れ</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#teacher">講師</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#room">教室住所等</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="contact.html">お問い合わせ<br>
+                            <span>contact</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html">問い合わせフォーム</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html#question">よくあるご質問</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+           
+        </header>
+        <main>
+            <ul class="pankuzu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="course.html">コース紹介</a></li>
+                <li><a href="course-kanj-pen.html">漢字部・ペン部</a></li>
+            </ul>
+            <div id="cours">
+                <section id="kanji">
+                    <h1 class="title">漢字部・<span class="inline-block">ペン部</span></h1>
+                    <div class="bg-c">
+                        <h2 class="text">おすすめ対象者</h2>
+                        <div class="grid">
+                            <ul>
+                                <li class="left">綺麗な字を書きたい</li>
+                                <li class="left">集中力を身につけたい</li>
+                            </ul>
+                            <ul>
+                                <li class="left">趣味を増やしたい</li>
+                                <li class="left">手紙を書きたい</li>
+                            </ul>
+                        </div>
+                    </div>                
+                    <section class="max-size">
+                        <div class="img column">
+                            <p><img src="img/photo/kaisho.png" alt="楷書体　霜月冬気潔"></p>
+                            <dl class="quote">
+                                <dt>日本習字　<span class="separator">令和5年11月号</span></dt>
+                                <dd>「霜月冬気潔」</dd>
+                            </dl>
+                        </div>
+                        <div class="bg-c1">
+                            <h2 class="bg-font text">楷書</h2>
+                            <div>
+                                <p>
+                                    <span>一画一画を省略せずに書くのが特徴です。<br></span>
+                                <span>隷書体を基に作られた書体で、基礎を学ぶのに適しています。<br></span>
+                                <span> そして、読み間違いも生じにくいです。現代日本で最も多く使用されています。</span>
+                                </p>
+                                <dl><dt>対象<span class="none">：</span></dt><dd>初心者～</dd></dl>
+                                <dl><dt>用途<span class="none">：</span></dt><dd>履歴書・ビジネスなど</dd></dl>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="max-size">
+                        <div class="img column">
+                            <p><img src="img/photo/gyousho.png" alt="行書体　及時当勉励"></p>
+                            <dl class="quote">
+                                <dt>日本習字　<span class="separator">令和5年11月号</span></dt>
+                                <dd>「及時当勉励」</dd>
+                            </dl>
+                        </div>
+                        <div class="bg-c1">
+                            <h2 class="bg-font text">行書</h2>
+                            <div>
+                                <p>
+                                    <span>楷書を少し崩して書くため、楷書に比べ字形が少し丸いことが特徴です。線質も楷書より柔らかくなります。<br></span>
+                                    <span>また、早く書くことができ、読みやすいのも特徴の一つです。</span>
+                                </p>
+                                <dl><dt>対象<span class="none">：</span></dt><dd>初心者～</dd></dl>
+                                <dl><dt>用途<span class="none">：</span></dt><dd>挨拶状・手紙・メモ</dd></dl>
+                            </div>
+                        </div>                        
+                    </section>
+                    <section class="max-size">
+                        <div class="img column">
+                            <p><img src="img/photo/sousho.png" alt="草書体　風散柳園秋"></p>
+                            <dl class="quote">
+                                <dt>日本習字　<span class="separator">令和5年11月号</span></dt>
+                                <dd>「風散柳園秋」</dd>
+                            </dl>
+                        </div>
+                        <div class="bg-c1">
+                            <h2 class="bg-font text">草書</h2>
+                            <div>
+                                <p>
+                                    <span>最も曲線が多く、柔らかい線質が特徴の書体です。<br></span>
+                                    <span>点画を省略し、一筆書きのように書くため、速く書くことができます。しかし、読みにくいのが難点です。</span>
+                                </p>
+                                <dl><dt>対象<span class="none">：</span></dt><dd>中級者～</dd></dl>
+                                <dl><dt>用途<span class="none">：</span></dt><dd>手紙・作品制作・メモ</dd></dl>
+                            </div>
+                        </div>                        
+                    </section>
+                    <section class="max-size">
+                        <div class="img column">
+                            <p><img src="img/photo/reisho.png" alt="隷書体　揮毫試性能"></p>
+                            <dl class="quote">
+                                <dt>日本習字　<span class="separator">令和5年11月号</span></dt>
+                                <dd>「揮毫試性能」</dd>
+                            </dl>
+                        </div>
+                        <div class="bg-c1">
+                            <h2 class="bg-font text">隷書</h2>
+                            <div>
+                                <p>
+                                    <span>形は横に平べったく、波磔（はたく）と呼ばれる払いが特徴です。</span><br>
+                                    <span>線の太さは、横線を太く、縦線を細く書きます。線質は柔らかく、重厚感が感じられる点も特徴の一つです。</span>
+                                </p>
+                                <dl><dt>対象<span class="none">：</span></dt><dd>上級者</dd></dl>
+                                <dl><dt>用途<span class="none">：</span></dt><dd>デザイン・看板</dd></dl>
+                            </div>
+                        </div>                        
+                    </section>
+                </section>
+                <div id="pen">
+                    <section class="max-size">
+                            <div class="img column">
+                                <p><img src="img/photo/pen.png" alt="手紙行書　文章"></p>
+                                <p class="letter">手紙行書</p>
+                            </div>
+                        <div class="bg-c1">
+                            <h2 class="bg-font text">ペン部</h2>
+                            <div>
+                                <p>
+                                    <span>ペンで書くときのコツ、縦書き、横書きの楷書及び行書を学ぶことができます。</span><br>
+                                    <span>楷書から学び、行書、次いで手紙（行書）へと学習を進めることで、基礎から順に学ぶことができます。</span>
+                                </p>
+                                <dl><dt>対象<span class="none">：</span></dt><dd>初心者～</dd></dl>
+                                <dl><dt>用途<span class="none">：</span></dt><dd>手紙・履歴書</dd></dl>
+                            </div>
+                        </div>                        
+                    </section>
+                </div>               
+            </div>             
+        </main>
+        <footer>
+            <section id="sitemap">
+                <h2>サイトマップ</h2>
+                <nav>
+                    <ul class="menu menu-bottom sub-menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="learn.html">習字を学びたい方
+                            </a>
+                        </li>
+                        <li><a href="course.html">コース紹介
+                            </a>
+                        </li>
+                        <li><a href="about.html">教室について
+                            </a>
+                        </li>
+                        <li><a href="contact.html">お問い合わせ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sitemap">
+                    <ul class="sub-menu">
+                        <li><a href="index.html#news" class="br" >お知らせ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="learn.html#membership">会費</a></li>
+                        <li><a href="learn.html#join">入会までの流れ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="course.html#junior">小学生・<span>中学生</span></a></li>
+                        <li><a href="course.html#adult">高校生・<span>成人の部</span></a></li>
+                        <li><a href="course.html#creation">作品紹介・<span>受講者の声</span></a></li>
+                        <li><a href="course.html#promotion">昇段・<span>昇級について</span></a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="about.html#recruitment">募集要項</a></li>
+                        <li><a href="about.html#join">一日の流れ</a></li>
+                        <li><a href="about.html#teacher">講師</a></li>
+                        <li><a href="about.html#room">教室住所等</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="contact-mail.html">お問い合わせ<span>フォーム</span></a></li>
+                        <li><a href="contact-mail.html#question">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="head1 footer">
+                <div class="footer-flex">
+                    <p class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></p>
+                    <div class="head2">
+                        <div class="head3">
+                            <p class="tel"><img src="img/svg/tel.svg" alt="tel 0123-456-789"></p>
+                            <p class="mail"><a href="contact-mail.html"><img src="img/svg/mail.svg" alt="お問い合わせ" class="mail"></a></p>
+                        </div>
+                        <p><img src="img/svg/uketsuke.svg" alt="受付時間/平日　13：00～17：00"></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <p><a href="https://www.facebook.com/profile.php?id=61554555970607" class="icon-facebook" title="facebook"></a></p>
+                    <div class="top-page"><a href="#top" class="go-top" ><span class="alow">ＴＯＰ</span></a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

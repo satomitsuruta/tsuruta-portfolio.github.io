@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title> ×○習字教室 | 教室について</title>
+        <meta name="description" content="正しい美しい字は、一生の宝です。当教室では、楽しみながら正しい美しい文字を学ぶことを目的としております。
+        習字を学ぶことで綺麗な姿勢、集中力、問題解決に必要な論理的思考力も養うことができます。">
+        <meta name="keywords" content="習字,書道,習字教室">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+        <link href="css/style-about.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="head">
+            <div class="top">
+                <div class="head1">
+                    <P class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></P>
+                    <div class="w-900">
+                        <div class="head2">
+                            <div class="head3">
+                                <p><a href="#sitemap" class="go-sitemap">サイトマップ</a></p>
+                                <div class="font-size">
+                                    <p>文字サイズ</p>
+                                    <div class="size">
+                                        <button onclick="changeFontSize(1.1)" data-fs="1.1" class="small">小</button>
+                                        <button onclick="changeFontSize(1.5)" data-fs="1.5" class="midium">中</button>
+                                        <button onclick="changeFontSize(1.7)" data-fs="1.7" class="big">大</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="search" action="#">
+                                <div class="search">
+                                    <input type="text" name="serch" placeholder="検索ワード">
+                                    <input type="submit" value=" ">       
+                                </div>
+                            </form>
+                        </div>
+                        <div id="hamburger-menu">
+                            <input type="checkbox" id="menu-btn-check">
+                            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                            <div class="hamburger-menu">
+                                <ul>
+                                    <li><a href="index.html">ホーム</a></li>
+                                    <li><a href="learn.html">習字を学びたい方</a></li>
+                                    <li><a href="course.html">コース紹介</a></li>
+                                    <li><a href="about.html">教室について</a></li>
+                                    <li><a href="contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <ul class="menu">
+                        <li class="main-menu"><a href="learn.html">習字を学びたい方<br>
+                            <span>learn</span></a>
+                                <ul class="drop-down">
+                                    <li class="drop-menu"><a class="drop-link" href="learn.html#membership">会費</a></li>
+                                    <li class="drop-menu"><a class="drop-link" href="learn.html#join">入会までの流れ</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu"><a href="course.html">コース紹介<br>
+                                <span>course</span></a>
+                                <ul class="drop-down">
+                                    <li class="drop-menu"><a class="drop-link" href="course.html#junior">小学生・中学生</a></li>
+                                    <li class="drop-menu"><a class="drop-link" href="course.html#adult">高校生・成人の部</a></li>
+                                    <li class="drop-menu"><a class="drop-link" href="course.html#creation">作品紹介・受講者の声</a></li>
+                                    <li class="drop-menu"><a class="drop-link" href="course.html#promotion">昇段・昇級について</a></li>
+                                </ul>
+                            </li>
+                        <li class="main-menu"><a href="about.html">教室について<br>
+                            <span>about</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="about.html#recruitment">募集要項</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#join">一日の流れ</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#teacher">講師</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#room">教室住所等</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="contact.html">お問い合わせ<br>
+                            <span>contact</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html">問い合わせフォーム</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html#question">よくあるご質問</a></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </nav>
+            </div> 
+        </header>
+        <main>       
+            <ul class="pankuzu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">教室について</a></li>
+            </ul>    
+            <div class="message">
+                <img id="bigimg1" src="img/photo/gaikan.jpg" alt="画像">
+                <h1 class="top-message">
+                  教室<span class="inline-block">について</span>
+                </h1>
+            </div>
+            <div id="introduction">
+                <section id="about1">
+                    <h2 class="introduction">募集要項・<span class="inline-block">1日の流れ</span></h2>
+                    <section  id="recruitment" >
+                        <h3 class="intro-title">募集要項</h3>
+                        <table class="table">
+                            <tr class="table-row">
+                                <th colspan="3">募集対象</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head">募集対象</th>
+                                <td colspan="2">小学生～成人</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th colspan="3">受講日数</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head">受講日数</th>
+                                <td colspan="2">４回&sol;月</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th colspan="3">受講可能日</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head">受講可能日</th>
+                                <td colspan="2">月・水・土</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th colspan="3">開講時間</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head">開講時間</th>
+                                <td colspan="2">
+                                    <dl>
+                                        <dt>月・水</dt><dd>15:00～18:00</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>土</dt><dd>13:00～17:00</dd>
+                                    </dl>
+                                </td>                            
+                            </tr>
+                            <tr class="table-row">
+                                <th colspan="3">休み</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head">休み</th>
+                                <td colspan="2">日・祝日・お盆休み・年末年始</td>
+                            </tr>
+                            <tr class="table-row">
+                                <th colspan="3">月謝</th>
+                            </tr>
+                            <tr>
+                                <th class="table-head" rowspan="2">月謝</th>
+                                <td>小学生～中学生</td>
+                                <td>３，５００円</td>
+                            </tr>
+                            <tr>
+                                <td>高校生・成人</td>
+                                <td>４，０００円</td>
+                            </tr>
+                        </table>
+                        <p class="small"><small>*成人は、３段以降１段昇段ごとに<span class="inline-block">＋５００円</span></small></p>
+                        <div class="contact">
+                            <div>
+                                <p>詳細は<span class="inline-block">下記までご連絡ください。</span></p>
+                                <div class="dl">
+                                    <dl>
+                                        <dt>電話番号<span class="hidden">:</span></dt><dd>０１２３－４５６－７８９</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Ｅ－ｍａｉｌ<span class="hidden">:</span></dt><dd>xxxooo@xxx-t.net</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>受付時間<span class="hidden">:</span></dt><dd>平日&sol;１３：００～１７：００</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="join">
+                        <h3  class="intro-title">１日の流れ</h3>
+                        <table class="table">
+                            <caption>Ａさんの場合</caption>
+                            <tr>
+                                <th>１５：００～</th>
+                                <td>入室・挨拶</td>
+                            </tr>
+                            <tr>
+                                <th>１５：００～<span class="separator">１６：００</span></th>
+                                <td>毛筆</td>
+                            </tr>
+                            <tr>
+                                <th>１６：００～<span class="separator">１６：１０</span></th>
+                                <td>習字道具片付け</td>
+                            </tr>
+                            <tr>
+                                <th>１６：１０～<span class="separator">１７：１０</span></th>
+                                <td>硬筆</td>
+                            </tr>
+                            <tr>
+                                <th>１７：１５</th>
+                                <td>退室</td>
+                            </tr>
+                        </table>
+                    </section>
+                </section>
+                <section id="about2">
+                    <h2 class="introduction">講師・教室</h2>
+                    <div> 
+                        <section id="teacher">
+                            <h3 class="intro-title">講師</h3>
+                            <div class="flex">
+                                <p class="img"><img src="img/photo/jibun.png" alt="画像"></p>
+                                <div class="strech">
+                                    <p class="name">鶴田聡巳（37）</p>
+                                    <p class="intro-text">
+                                        ３歳から習字教室に通い始め、日本習字は小学３年生～現在まで２９年間継続。<br>
+                                        漢字部７段、ペン部５段、師範免許取得。<br>
+                                        習字を通じて正しい字、集中力だけでなく、考える力も身に付けられるよう指導することを心掛けています。
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="room">
+                            <h3 class="intro-title">教室住所等</h3>
+                            <div class="flex">
+                                <div class="location-map">
+                                    <iframe class="location-map-style" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3252.4575375755594!2d139.2061056388091!3d35.393907977434644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601907eec727eb95%3A0x477d60ceabb84c60!2z56We5aWI5bed55yM56em6YeO5biC!5e0!3m2!1sja!2sjp!4v1695619928926!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <p>※地図情報は架空です。</p>
+                                </div>
+                                <div class="strech">
+                                    <p class="name">&times;〇習字教室</p>
+                                    <div class="intro-text dl">
+                                        <div class="dl">
+                                            <dl>
+                                                <dt>電話番号<span class="hidden">:</span></dt><dd>０１２３－４５６－７８９</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Ｅ－ｍａｉｌ<span class="hidden">:</span></dt><dd>xxxooo@xxx-t.net</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>受付時間<span class="hidden">:</span></dt><dd>平日&sol;１３：００～１７：００</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>           
+        </main>
+        <footer>
+            <section id="sitemap">
+                <h2>サイトマップ</h2>
+                <nav>
+                    <ul class="menu menu-bottom sub-menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="learn.html">習字を学びたい方
+                            </a>
+                        </li>
+                        <li><a href="course.html">コース紹介
+                            </a>
+                        </li>
+                        <li><a href="about.html">教室について
+                            </a>
+                        </li>
+                        <li><a href="contact.html">お問い合わせ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sitemap">
+                    <ul class="sub-menu">
+                        <li><a href="index.html#news" class="br" >お知らせ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="#membership">会費</a></li>
+                        <li><a href="#join">入会までの流れ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="course.html#junior">小学生・<span>中学生</span></a></li>
+                        <li><a href="course.html#adult">高校生・<span>成人の部</span></a></li>
+                        <li><a href="course.html#creation">作品紹介・<span>受講者の声</span></a></li>
+                        <li><a href="course.html#promotion">昇段・<span>昇級について</span></a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="about.html#recruitment">募集要項</a></li>
+                        <li><a href="about.html#join">一日の流れ</a></li>
+                        <li><a href="about.html#teacher">講師</a></li>
+                        <li><a href="about.html#room">教室住所等</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="contact-mail.html">お問い合わせ<span>フォーム</span></a></li>
+                        <li><a href="contact-mail.html#question">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="head1 footer">
+                <div class="footer-flex">
+                    <p class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></p>
+                    <div class="head2">
+                        <div class="head3">
+                            <p class="tel"><img src="img/svg/tel.svg" alt="tel 0123-456-789"></p>
+                            <p class="mail"><a href="contact-mail.html"><img src="img/svg/mail.svg" alt="お問い合わせ" class="mail"></a></p>
+                        </div>
+                        <p><img src="img/svg/uketsuke.svg" alt="受付時間/平日　13：00～17：00"></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <p><a href="https://www.facebook.com/profile.php?id=61554555970607" class="icon-facebook" title="facebook"></a></p>
+                    <div class="top-page"><a href="#top" class="go-top" ><span class="alow">ＴＯＰ</span></a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

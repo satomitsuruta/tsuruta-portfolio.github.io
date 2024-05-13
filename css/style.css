@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    
+    
+}
+header {
+    margin: 10px ;
+   
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 80px;
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 30px;
+}
+
+/*ヘッダー*/
+#header {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    padding: 10px 0;
+    
+}
+#header .nav {
+    min-width: 300px;
+    width: 20%;
+    margin: 0 0 0 auto;
+    z-index: 2; 
+    list-style: none; 
+    font-size:20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;   
+}
+#header li {
+    width: 100px;
+    text-align: center;
+}
+#header ul a {
+    color: #fff;
+}
+#header ul a:hover {
+    color: #00f925;
+}
+/*メインエリア*/
+main {
+    height: 100vh;
+}
+.top-main {
+    max-height: 400px;
+    height: 60vh;
+    max-width: 525px;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+.img-bg {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/top.png);
+}
+.top-main h1 {
+    color: #000;
+    transition: 0.15s
+}
+.top-main a:hover h1{
+    color: #fff; 
+}
+.top-main a:hover h1{
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #000, 1px -1px 5px #000, -1px 1px 5px#000, 1px 1px 5px #000, 1px 1px 4px #000, 1px -1px 4px #000, -1px 1px 4px#000, 1px 1px 4px #000, 1px 1px 4px #000, 1px -1px 4px #000, -1px 1px 4px#000, 1px 1px 4px #000, 1px 1px 4px #000, 1px -1px 4px #000, -1px 1px 4px#000, 1px 1px 4px #000; 
+}
+.top-main a:hover h1 :last-child {
+    text-shadow: 1px 1px 4px #000, 1px -1px 4px #000, -1px 1px 4px#000, 1px 1px 4px #000, 1px 1px 4px #000, 1px -1px 4px #000, -1px 1px 4px#000
+}
+.top {
+    padding: 10px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-25%, -52%);
+    font-weight: bold;    
+    line-height: 1;
+}
+.top .inline-block {
+    display: inline-block;
+    width: 100%;
+    text-indent: 5rem;
+    line-height: 1.1;
+}
+.top .inline-block.font-udmin {
+    font-family: 'BIZ UDMincho', serif;
+    text-indent: 9rem;
+    font-size: 40px;
+    transform: translate(0, -60%)
+}
+/*背景色グラデーションアニメ*/
+.bggradient {
+    background: repeating-linear-gradient(to bottom right,  #000ac5af, #0e00d6, #0d00c3,#007bff, #0095ff, #0e00d6 ,#000ac5af 50%) ;
+    background-size: 500% 1000%;
+    animation: 15s bggradient ease infinite;
+  }
+  @keyframes bggradient {
+    0% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+ /*レスポンシブ対応*/
+ @media screen and (max-width: 767px) {
+    #header .nav {
+        width: 50%;
+        margin: 0 auto;
+       
+    }
+    .top-main {
+        width: 100%;
+       
+    }
+    .img-bg {
+        background-position: 78%;
+    }
+        
+    h1 {
+        font-size: 60px;
+    }
+    
+    .top .inline-block.font-udmin {
+        font-size: 2rem;
+        text-indent: 5rem; 
+        transform: translate(0, -30%)       
+    }
+ }
+ @media screen and (max-width: 300px){
+    #header {
+        width: 100%;
+       margin: 10px 0;
+       left: 0;
+       right: 0;
+    }
+    #header .nav {
+        min-width: 0;
+        width: 100%;
+    }
+    #header li {
+        width: 30%;
+        column-gap: 10px;
+    }
+    #header .nav li a{
+        width: 7rem;
+        text-align: justify;
+        text-align-last: justify;
+    }
+    .top .inline-block.font-udmin {
+        text-indent: 3rem; 
+    }   
+ }

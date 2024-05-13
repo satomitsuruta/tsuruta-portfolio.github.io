@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title> ×○習字教室 | お知らせ </title>
+        <meta name="description" content="正しい美しい字は、一生の宝です。当教室では、楽しみながら正しい美しい文字を学ぶことを目的としております。
+        習字を学ぶことで綺麗な姿勢、集中力、問題解決に必要な論理的思考力も養うことができます。">
+        <meta name="keywords" content="習字,書道,習字教室">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+        <link href="css/style-news.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="head">
+            <div class="top">
+                <div class="head1">
+                    <P class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></P>
+                    <div class="w-900">
+                        <div class="head2">
+                            <div class="head3">
+                                <p><a href="#sitemap" class="go-sitemap">サイトマップ</a></p>
+                                <div class="font-size">
+                                    <p>文字サイズ</p>
+                                    <div class="size">
+                                        <button onclick="changeFontSize(1.1)" data-fs="1.1" class="small">小</button>
+                                        <button onclick="changeFontSize(1.5)" data-fs="1.5" class="midium">中</button>
+                                        <button onclick="changeFontSize(1.7)" data-fs="1.7" class="big">大</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="search" action="#">
+                                <div class="search">
+                                    <input type="text" name="serch" placeholder="検索ワード">
+                                    <input type="submit" value=" ">       
+                                </div>
+                            </form>
+                        </div>
+                        <div id="hamburger-menu">
+                            <input type="checkbox" id="menu-btn-check">
+                            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                            <div class="hamburger-menu">
+                                <ul>
+                                    <li><a href="index.html">ホーム</a></li>
+                                    <li><a href="learn.html">習字を学びたい方</a></li>
+                                    <li><a href="course.html">コース紹介</a></li>
+                                    <li><a href="about.html">教室について</a></li>
+                                    <li><a href="contact.html">お問い合わせ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="nav">
+                    <ul class="menu">
+                        <li class="main-menu"><a href="learn.html">習字を学びたい方<br>
+                        <span>learn</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="learn.html#membership">会費</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="learn.html#join">入会までの流れ</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="course.html">コース紹介<br>
+                            <span>course</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="course.html#junior">小学生・中学生</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#adult">高校生・成人の部</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#creation">作品紹介・受講者の声</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="course.html#promotion">昇段・昇級について</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="about.html">教室について<br>
+                            <span>about</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="about.html#recruitment">募集要項</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#join">一日の流れ</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#teacher">講師</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="about.html#room">教室住所</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="contact.html">お問い合わせ<br>
+                            <span>contact</span></a>
+                            <ul class="drop-down">
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html">問い合わせフォーム</a></li>
+                                <li class="drop-menu"><a class="drop-link" href="contact-mail.html#question">よくあるご質問</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <main>
+            <ul class="pankuzu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html#news">お知らせ</a></li>
+                <li><a href="news2.html">臨時休講</a></li>
+            </ul>
+            <section id="news">
+                <h1 class="p-title">お知らせ</h1>
+                        <h2 class="news-title">臨時休講の<span class="separator">お知らせ</span></h2>
+                        <p class="news-text">
+                            <span>１１月２５日（土）は、都合により休講とさせていただきます。<br>
+                            土曜日に受講されている方で、希望される方は、別日に振替をお願いします。<br>
+                            詳細は下記の通りです。</span>
+                        </p>
+                        <div class="news">
+                            <div class="dl">
+                                <p>記</p>
+                                <dl>
+                                    <dt>対象者<span class="hidden">：</span></dt><dd>受講日が土曜日の方</dd>
+                                </dl>
+                                <dl>
+                                    <dt>休講日<span class="hidden">：</span></dt><dd>１１&sol;２５（土）</dd>
+                                </dl>
+                                <dl>
+                                    <dt>振替可能日<span class="hidden">：</span></dt><dd>１１&sol;２０（月）・１１&sol;２２（水）</dd>
+                                </dl>
+                            </div>
+                        </div>
+            </section>
+        </main>
+        <footer>
+            <section id="sitemap">
+                <h2>サイトマップ</h2>
+                <nav>
+                    <ul class="menu menu-bottom sub-menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="learn.html">習字を学びたい方
+                            </a>
+                        </li>
+                        <li><a href="course.html">コース紹介
+                            </a>
+                        </li>
+                        <li><a href="about.html">教室について
+                            </a>
+                        </li>
+                        <li><a href="contact.html">お問い合わせ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sitemap">
+                    <ul class="sub-menu">
+                        <li><a href="index.html#news" class="br" >お知らせ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="learn.html#membership">会費</a></li>
+                        <li><a href="learn.html#join">入会までの流れ</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="course.html#junior">小学生・<span>中学生</span></a></li>
+                        <li><a href="course.html#adult">高校生・<span>成人の部</span></a></li>
+                        <li><a href="course.html#creation">作品紹介・<span>受講者の声</span></a></li>
+                        <li><a href="course.html#promotion">昇段・<span>昇級について</span></a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="about.html#recruitment">募集要項</a></li>
+                        <li><a href="about.html#join">一日の流れ</a></li>
+                        <li><a href="about.html#teacher">講師</a></li>
+                        <li><a href="about.html#room">教室住所</a></li>
+                    </ul>
+                    <ul class="sub-menu">
+                        <li><a href="contact-mail.html">お問い合わせ<span>フォーム</span></a></li>
+                        <li><a href="contact-mail.html#question">よくあるご質問</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="head1 footer">
+                <div class="footer-flex">
+                    <p class="rogo"><a href="index.html"><img src="img/svg/kyousitsu.svg" alt="×○習字教室"></a></p>
+                    <div class="head2">
+                        <div class="head3">
+                            <p class="tel"><img src="img/svg/tel.svg" alt="tel 0123-456-789"></p>
+                            <p class="mail"><a href="contact-mail.html"><img src="img/svg/mail.svg" alt="お問い合わせ" class="mail"></a></p>
+                        </div>
+                        <p><img src="img/svg/uketsuke.svg" alt="受付時間/平日　13：00～17：00"></p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <p><a href="https://www.facebook.com/profile.php?id=61554555970607" class="icon-facebook" title="facebook"></a></p>
+                    <div class="top-page"><a href="#top" class="go-top" ><span class="alow">ＴＯＰ</span></a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

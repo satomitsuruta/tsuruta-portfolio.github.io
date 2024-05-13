@@ -1,0 +1,856 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 100%;
+    scroll-padding-top: 175px;
+    
+}
+body {
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 80px;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
+}   
+h2 {
+    font-size: 35px;
+    line-height: 1.5;
+}
+h3 {
+    font-size: 30px;
+}
+.head3 p, nav {
+    font-weight: bold;
+}
+.sub-menu {
+    font-size: 18px;
+}
+/*ヘッダー*/
+.top {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.head1, .head2, .head3, .w-900, .font-size, .size, .footer-flex{
+    display: flex;
+}
+.head1 {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.head2 {
+    flex-direction: column;
+}
+.head3 {
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.head3 .go-sitemap {
+    color: #000;
+}
+.head3 .font-size, .size {
+    align-items: flex-end;
+}
+.head3 .size .midium {
+    font-size: 20px;
+}
+.head3 .size .big {
+    font-size: 23px;   
+}
+.head3 p {
+    margin-right: 1.1rem;
+}
+.head3 .size  button{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px;
+    background-color: #00f;
+    color: #fff;
+}
+.head3 .size .big {
+    margin-right: 0;
+}
+
+/*検索フォーム*/
+#search {
+    margin: 0 0 0 auto;
+    width: 70%;
+    text-align: center;   
+}
+.search {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    padding: 7px;
+    background: rgba(213, 207, 207, 0.3);
+}
+input[type="text"], input[type="submit"]{
+    padding: 3px;
+    border: 1px solid #000;
+}
+input[type="text"] {
+    width: 75%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+input[type="submit"] {
+    width: 20%;
+    background: center center url(../img/svg/serch.svg) no-repeat;
+    background-size: 20px 20px;
+}
+/*TOPナビゲーション*/
+nav .menu { 
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background: rgba(179, 179, 179, 0.1);
+    z-index: 99;
+}
+.menu .main-menu, #sitemap .menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+}
+.menu li span {
+    color: #07f;
+    transition: 0.5s;
+}
+.menu > :nth-child(3) span {
+    color:#ef9206;
+}
+.menu li:hover span {
+    color: #ef9206;
+}
+.menu .main-menu:first-child {
+    border-left: 3px dotted #000;
+}
+.menu .main-menu:last-child {
+    border-right: 3px dotted #000;
+}
+.menu .main-menu:not(:last-child) {
+    border-right: 3px dotted #000;
+}
+.menu li a {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px 5px;
+    text-decoration: none;
+    color: #000;
+    z-index: 2;
+}
+/*ドロップダウン*/
+#nav .main-menu .drop-down {
+    list-style-type: none; 
+    position: absolute;
+    left:0;
+    top:55px;
+    width: 100%;
+    display: block;
+    background:rgb(230, 247, 226);
+}
+#nav .main-menu .drop-down .drop-link {
+    display: block;
+    padding: 0 20px;
+    line-height: 0;
+    transform: scaleY(0);
+    transition: 0.3s padding, 0.3s line-height, 0.3s transform;
+}
+/*ドロップダウンリスト出現時のスタイル*/
+#nav .main-menu .drop-down .drop-link.is-active {
+    padding: 10px 20px;
+    line-height: 1.2;
+    transform: scaleY(1);
+}
+#nav .main-menu .drop-down .drop-menu:hover {
+    background: #03af00;
+}
+.drop-link:hover {
+    display: inline-block;
+    color: #ffffff;
+}
+/*パンくずリスト*/
+.pankuzu {
+    margin: 20px 30px;
+    display: flex;
+    list-style-type: none;
+    font-size: 17px;
+}
+.pankuzu li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #38a45f;
+    margin-right: 10px;
+
+}
+.pankuzu a {
+    color: #38a45f;
+}
+.pankuzu li:not(:last-child)::after {
+    content:"";
+    display: block;
+    width: 10px;
+    height:10px;
+    margin-left: 0.5rem;
+    border-top: 2px solid #38a45f;
+    border-right: 2px solid #38a45f;
+    transform: rotate(45deg);  
+}
+/*ページトップ画像*/
+.message {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+#bigimg1 {
+    width: 100%;
+    height: 80vh;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: 0 35%;
+}
+.top-message {
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    line-height: 1.3;
+    animation: 4s fadein forwards;
+}
+/*文字の浮き上がり*/
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*メインエリア*/
+main {
+    margin: 150px auto 20px;
+    padding: 20px 0;
+}
+#introduction, footer {
+    margin: 30px auto 30px;    
+}
+.intro-title {
+    text-align: center;
+}
+#about1 {
+    padding: 20px 0;
+}
+
+.introduction {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 30px; 
+    padding: 15px;
+    background-color: rgba(213, 207, 207, 0.3);
+    color:  #00762b;
+}
+#recruitment {
+    padding-top: 20px;
+}
+tr {
+    line-height: 1.3;
+}
+.table, .table th, .table td {
+    border: 3px solid #000;
+    padding: 10px;
+}
+.table-row {
+    display: none;
+}
+.table  {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+th {
+    background-color: #38a45f;
+}
+td {
+    text-align: center;
+    background-color: #ececec;
+}
+.table dl {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0
+}
+.table dt {
+    width: 10rem;
+    text-align: center;
+}
+.table dt, .table dd {
+    padding: 10px;
+}
+#introduction .small, #introduction .contact {
+    width: 60%;
+    margin: 20px auto;
+}
+#introduction .small {
+    text-align: center;
+}
+#introduction .small small {
+    display: inline-block;
+    text-align: left;
+}
+#join th {
+    width: 40%;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact p {
+    text-align: center;
+    margin: 40px;
+}
+.contact .dl {
+    margin: 35px auto;
+}
+.contact dl {
+    display: flex;
+    margin: 15px auto;
+}
+.contact dt {
+    width: 15rem;
+    text-align: justify;
+    text-align-last: justify;
+    padding: 10px ;
+}
+.contact dd {
+    flex-grow: 1;
+    padding: 10px;
+}
+caption {
+    padding: 20px;
+    color:#00762b;
+}
+#teacher, #room {
+    margin: 50px auto;
+}
+.flex dl {
+    display: flex;
+    width: 95%;
+    margin: 20px auto;
+}
+.flex dt {
+    width: 13rem;
+    text-align: justify;
+    text-align-last: justify;
+    padding: 10px ;
+}
+.flex dd {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+}
+.separator {
+    display: inline-block;
+}
+#about2 .intro-title {
+    margin: 30px auto;
+}
+#about2 .img {
+    max-width: 300px;    
+}
+#about2 .name {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+#about2 .intro-text {
+   width: 80%;
+   margin: 30px auto;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+.location-map-style {
+   width: 300px;
+   height: 333px;
+   border: none;
+}
+.strech {
+    align-self: stretch;
+    width: calc(100% - 300px);
+    background-color: #ececec;
+    padding: 20px 0;
+    
+}
+.strech p {
+    line-height: 1.3;
+    margin: 30px;
+}
+/*サイトマップ*/
+#sitemap {
+    margin-bottom: 30px;
+    padding: 20px ;
+    background: #d4efda;
+}
+#sitemap a{
+    padding: 5px 0; 
+}
+#sitemap h2{
+    padding: 20px;
+}
+#sitemap .menu {
+    background: none;
+}
+#sitemap .menu li {
+    width: 18%;
+    border: none;
+}
+#sitemap .menu li::after {
+    display: none;
+}
+.sitemap {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.sitemap .sub-menu {
+    width: 18%;
+    list-style: none;
+    text-align: center;
+}
+#sitemap .menu li, .sitemap .sub-menu li{
+    border-bottom: 2px solid #000;
+    color: #000;  
+}
+.sitemap .sub-menu li {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+
+}
+#sitemap .menu li:hover, .sitemap .sub-menu li:hover {
+    background-color: #03af00;
+}
+.sitemap .sub-menu a {
+    width: 100%;
+    display: block;
+    text-indent: 0.5rem;
+    color: #000;  
+}
+#sitemap .menu a:hover, .sitemap .sub-menu a:hover {
+    color: #fff;
+}
+/*footer*/
+.footer .rogo, .footer .head2, .footer .icon {
+    width: 25%;
+}
+.footer .head3 {
+    align-items: center;
+}
+.footer-flex {
+    width: 57.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon p {
+    height: 60px;
+}
+.icon-facebook {
+    padding-bottom: 10px;
+}
+/*Topへ戻るボタン*/
+.top-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #38a45f;
+    opacity: 0.2;
+    transition: 0.5s opacity ;  
+}
+.top-page a {
+    font-size: 1rem;
+}
+.top-page:hover {
+   opacity: 1;
+   background: #38a45f;
+}
+.top-page:hover a {
+    color: #fff;
+}
+/*アイコンフォント*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?1eiqnp');
+    src:  url('fonts/icomoon.eot?1eiqnp#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?1eiqnp') format('truetype'),
+      url('fonts/icomoon.woff?1eiqnp') format('woff'),
+      url('fonts/icomoon.svg?1eiqnp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+.icon .icon-facebook:before {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-top: 0;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #004aad;
+    font-size: 30px;
+  }
+  /*レスポンシブ対応*/
+/*ハンバーガーメニュー*/
+#menu-btn-check, .hamburger-menu {
+    display: none;
+}
+/*レスポンシブ用ボタン*/
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 1rem;
+    height: 45px;
+    width: 45px;
+    z-index: 90;
+    background-color: #000;
+    display: none;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    top: 8px;
+}
+.menu-btn span:after {
+   bottom: 8px;
+}
+.menu-btn:hover {
+    cursor: pointer;
+}
+#menu-btn-check:checked ~ .menu-btn {
+    background-color: rgba(0, 0, 0, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+.hamburger-menu {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 180px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(0, -101%);
+    transition: all 0.5s;
+}
+#menu-btn-check:checked ~ .hamburger-menu {
+    transform: translate(0, 0);
+}
+.hamburger-menu ul {
+    padding: 55px 10px 20px;
+}
+.hamburger-menu ul li {
+    margin: 0 auto;
+    width: 95%;
+    border-bottom: 2px solid #fff;
+    padding: 5px 5px 3px;
+    list-style: none;
+    margin-top: 1rem;
+}  
+.hamburger-menu ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #fff;
+} 
+.hamburger-menu ul li a:hover {
+    color:#04c701;  
+    text-decoration: none;  
+}
+.sub-menu a {
+    display:flex;
+    flex-wrap: wrap;
+    }
+
+@media screen and (max-width: 1200px) {
+    .top-message {
+        font-size: 55px;
+    }
+    .introduction{
+        width: 100%;
+    }
+    .table span, #sitemap span{
+        display: inline-block;
+    }
+    #introduction .contact {
+        width: 80%;
+    }
+    #about2 .flex{
+       flex-direction: column;  
+       align-items: center;
+    }
+    .strech {
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    #about2 .intro-text.dl{
+        width: 100%;
+        margin: auto ;
+    }
+    .flex dl {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .go-sitemap, #nav, #sitemap {
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    #search {
+        margin-left: 0.5rem;
+        width: 90%;
+    }
+    .pankuzu {
+        display: none;
+    }
+    main {
+        margin: 90px auto 20px;
+        padding: 10px;
+    }
+    .message {
+        width: 100%;
+    }
+    .top-message {
+        font-size: 50px;
+    }
+    .table {
+        width: 85%;
+    }
+    #introduction .small, #introduction .contact {
+        width: 100%;
+    }
+    #sitemap {
+        display: none;
+    }
+    
+} 
+@media screen and (max-width: 690px) {
+    h1 {
+         font-size: 45px;
+         line-height: 1.3;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h2 span {
+        display: block;
+    }
+    .font-size {
+        display: none;
+    }
+    .catch {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menu-btn {
+        top: 8px;
+    }
+    main {
+        margin: 60px auto 20px;
+    }
+    #bigimg1 {
+        height: 50vh;
+        object-position: 50% 20%;
+    }
+    .top-message {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+     }
+     .inline-block {
+        display: inline-block;
+    }
+    #search {
+        width: 100%;
+     }
+    .table  {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .table-row {
+        display: table-row;
+    }
+    .table-head {
+        display: none;
+    }
+    .flex {
+        width: 95%;
+    }
+    .contact dl, .intro-text dl {
+        display: block;
+    }
+    .contact dl dt, .intro-text dl dt {
+        margin: auto;
+    }
+    .contact dl dt, .contact dl dd, .intro-text dl dt, .intro-text dl dd{
+        text-align: center;
+    }
+    .hidden {
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-flex {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-around;
+        align-items: center;
+        order: 1;
+
+    }
+    .footer-flex .rogo {
+        align-items: center;
+    }
+    .footer-flex .head2 {
+        flex-direction: row;
+        width: 60%;
+    }
+    .footer-flex .head2 p img {
+        vertical-align: middle;
+        transform: scale(1.2, 2.5);
+    }
+    .footer-flex .head3 { 
+        margin-bottom: 0;
+        margin-right: 1.6rem;
+    }
+    .footer-flex .head3 p img {
+        transform: scale(1.2, 3);
+    }
+    .mail {
+        margin-left: 0.5rem;
+        transform: scaleX(1.2)
+    }
+    .footer .icon {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-page {
+        position: static;
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    body {
+        margin: 0;
+    }
+    #search {
+        display: none;
+    }
+    #introduction .small small{
+        width:90%;
+        margin: 0 auto;
+    }
+    #introduction .small small .inline-block {
+        text-align: center;
+    }
+    .contact p {
+        margin: 40px 0;
+    }
+    .location-map p {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .location-map-style {
+        width: 250px;
+    }
+    
+    .flex {
+        width: 100%;
+    }
+    .flex dl {
+        width: 100%;
+    }
+}
